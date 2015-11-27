@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+   <html>
+    <head>
+       <meta name="viewport" content="width=device-width; initial-scale=1" >
+        <style>
+            @import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+            body { 
+                  font-family: 'Open Sans', sans-serif;
+                  color: white;
+                    }
+
+/* STRUCTURE */
+
+    #pagewrap {
+        padding: 5px;
+        width: 960px;
+        margin: 20px auto;
+    }
+    header {
+        height: 100px;
+        padding: 0 15px;
+        background-color: #4493d8;
+    }
+    header img{
+        max-width: 10%;
+        float: left;
+        margin-top: 15px;
+            }
+    #content {
+        width: 290px;
+        float: left;
+        padding: 5px 15px;
+        background-color: #84b8e5;
+    }
+
+    #middle {
+        width: 294px; /* this will account for margins and border values */
+        float: left;
+        padding: 5px 15px;
+        margin: 0px 5px 5px 5px;
+        background-color: #84b8e5;
+    }
+
+    #sidebar {
+        width: 270px;
+        padding: 5px 15px;
+        float: left;
+        background-color: #84b8e5;
+    }
+    footer {
+        clear: both;
+        padding: 0 15px;
+        background-color: #4493d8;
+    }
+    h2 {
+        color: #3d3d3d;
+    }
+    #phone{
+        margin-top: -15px;
+    }
+    a{
+        text-decoration: none;
+        color: #3d3d3d;
+    }
+    a:hover{
+        color: white;
+        text-decoration: underline;
+    }
+    .disclaimer{
+        font-size: 11px;
+        text-align: right;
+    }
+    /************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+/* for 980px or less */
+    @media screen and (max-width: 980px) {
+        header img {
+            max-width: 20%;
+            display: block;
+            margin: auto;
+        }
+        #pagewrap {
+            width: 94%;
+        }
+        #content {
+            width: 41%;
+            padding: 1% 4%;
+        }
+        #middle {
+            width: 41%;
+            padding: 1% 4%;
+            margin: 0px 0px 5px 5px;
+            float: right;
+        }
+
+        #sidebar {
+            clear: both;
+            padding: 1% 4%;
+            width: auto;
+            float: none;
+        }
+
+        header, footer {
+            padding: 1% 4%;
+        }
+    }
+           
+
+/* for 700px or less */
+    @media screen and (max-width: 600px) {
+
+        header img{
+            
+            max-width: 30%;
+            display: block;
+            margin: auto;
+        }
+        h1 {
+            font-size: 2em;
+            
+        }
+        #content {
+            width: auto;
+            float: none;
+        }
+
+        #middle {
+            width: auto;
+            float: none;
+            margin-left: 0px;
+        }
+
+        #sidebar {
+            width: auto;
+            float: none;
+        }
+
+    }
+
+/* for 480px or less */
+    @media screen and (max-width: 480px) {
+
+        header {
+            height: auto;
+        }
+        header img{
+            float: none;
+            max-width: 50%;
+            display: block;
+            margin: auto;
+        }
+        h1 {
+            font-size: 2em;
+            text-align: center;
+        }
+        #sidebar {
+            display: none;
+        }
+
+    }
+
+
+    #content #sidebar {
+        background-color: #84b8e5;
+    }
+   
+    header, #content, #middle, #sidebar {
+        margin-bottom: 5px;
+    }
+
+    #pagewrap, header, #content, #middle, #sidebar, footer {
+        border: solid 1px #ccc;
+    }      
+        </style>
+    </head>
+    /************************************************************************************
+PAGE CONTENT
+*************************************************************************************/
+    <body>
+        <div id="pagewrap">
+
+            <header>
+                <img src="http://i.imgur.com/1pt8PZR.png">
+                <h1>UX Workshop 2 - Proinsias Matthews</h1>
+            </header>
+
+            <section id="content">
+                <h2>My Team</h2>
+                <h3>Team 12</h3>
+                <p>Our team for the group projects consists of:<br>
+                <ul>
+                    <li>Proinsias Matthews</li>
+                    <li>Gareth Jenkins</li>
+                    <li>Elizabeth Conway</li>
+                    <li>John Sinnott</li>
+                    <li>Mark Tomas</li>
+                    <li>Foloshade Olajide</li>
+                    <li>Liam Walsh</li>
+                </ul>
+                </p>
+            </section>
+
+            <section id="middle">
+                <h2>Collaboration Tools</h2>
+                <p>So far we have mainly been using the Google Suite. This includes Docs, Sheets, Hangouts &amp; Mail. We find it very good and have a set time to meet each other on Hangouts each week (Monday 7:30pm). So far there have been no technical difficulties with any of the applications we have used so far.</p>
+                <p>We have stated that for next week we want to explore some other applications in order to explore other technologies. Trello is top of the list and I feel it can be a great place to keep to-do lists and it has the potential to be an invaluable tool when brainstorming.</p>
+            </section>
+
+            <aside id="sidebar">
+                <h2>Contact Me</h2>
+                <p>I can be contact virtually 24/7 on my mobile:<li id="phone">086 8865293</li> or between 9am-8pm at my email<li><a href="mailto:proinsias@my.com" target="_blank">proinsias@my.com</a></li></p>
+                <p>My design portfolio is also available on <a href="http://behance.net/ProinsiasDesign" target="_blank">Behance.</a> </p>
+            </aside>
+
+            <footer>
+                <h4>For Barry M<sup>c</sup>Adam</h4>
+                <p>Created by Proinsias Matthews for UX &amp; Concept Design Workshop 2</p>
+                <p class="disclaimer">Digital Skills Academy logo is hosted on imgur.com and all copyrights belong to the respectful owners, not me.</p>
+            </footer>
+
+        </div>
+        
+    </body>
+</html>
+
+
